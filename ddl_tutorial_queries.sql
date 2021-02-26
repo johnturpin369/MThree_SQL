@@ -70,7 +70,13 @@ INSERT INTO ProjectWorker(ProjectId, WorkerId) VALUES
     ('db-milestone', 3),
     ('db-milestone', 4);
 
-SELECT * FROM projectworker;
+
+
+
+
+
+
+-- SELECT * FROM projectworker;
 
 
 
