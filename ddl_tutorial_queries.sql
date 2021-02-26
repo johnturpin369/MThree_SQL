@@ -40,3 +40,44 @@ CREATE TABLE Task (
     FOREIGN KEY fk_Task_ProjectWorker (ProjectId, WorkerId)
         REFERENCES ProjectWorker(ProjectId, WorkerId)
 );
+
+INSERT INTO Worker(WorkerId, FirstName, LastName)
+	VALUES(1, 'Rosemond', 'Featherbie');
+    
+INSERT INTO Worker(FirstName, LastName)
+	VALUES('Kingsly', 'Besantie');
+    
+INSERT INTO Worker(FirstName, LastName) VALUES
+	('Goldi', 'Pilipets'),
+	('Dorey', 'Rulf'),
+    ('Panchito', 'Ashtonhurst');
+    
+INSERT INTO Worker(WorkerId, FirstName, LastName)
+	VALUES (50, 'Valentino', 'Newvill');
+    
+INSERT INTO project(ProjectId, `Name`, DueDate)
+	VALUES ('db-milestone', 'Database Material', '2018-12-31');
+
+INSERT INTO projectworker(ProjectId, WorkerId)
+	VALUES ('db-milestone', 2);
+    
+INSERT INTO Project(ProjectId, `Name`, DueDate)
+	VALUES('kitchen', 'Kitchen Remodel', '2025-07-15');
+
+INSERT INTO ProjectWorker(ProjectId, WorkerId) VALUES
+	('db-milestone', 1),
+    ('kitchen', 2),
+    ('db-milestone', 3),
+    ('db-milestone', 4);
+
+SELECT * FROM projectworker;
+
+
+
+
+
+
+
+
+
+
